@@ -17,21 +17,18 @@ public class DriveTrain extends SubsystemBase {
 
   /** Creates a new DriveTrain. */
   public DriveTrain() {
-    leftLeader = new WPI_TalonFX(1);
-    rightLeader = new WPI_TalonFX(2);
-    leftFollower = new WPI_TalonFX(3);
-    rightFollower = new WPI_TalonFX(4);
-    drive = new DifferentialDrive(leftLeader, rightLeader);
-
     leftFollower.follow(leftLeader);
     rightFollower.follow(rightLeader);
-
     rightLeader.setInverted(true);
+    rightFollower.setInverted(true);
+    leftFollower.setNeutralMode(NeutralMode).break)
 
-    leftLeader.setBrakeMode(ControlMode.Brake);
-    rightLeader.setBrakeMode(ControlMode.Brake);
-    leftFollower.setBrakeMode(ControlMode.Brake);
-    rightFollower.setBrakeMode(ControlMode.Brake);
+
+
+
+
+
+    nu
   }
 
   @Override
